@@ -1,0 +1,470 @@
+/* 
+--- Paleta de colores ---
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+--- Tamaños Tipográficos ---
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p {
+    font-size:12px;
+    font-weight:500;
+}
+
+h2 {
+    font-size: 24px;
+    display: block;
+}
+h4 {
+    font-weight: 400;
+}
+
+/* //////////// ESTILOS DEL HEADER //////////// */
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    margin: auto;
+}
+.main-header-top-bar-FINAL {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.main-header-top-bar {
+    display: flex;
+}
+.main-header-top-bar-logo {
+    width:50%;
+}
+.main-header-top-bar-logo img {
+    
+}
+.main-header-form {
+    width:50%;
+    margin-left: 10px;
+    
+}
+.main-header-form input {
+    border-radius: 10px;
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    width: 90px;
+    color: #666; 
+}
+.main-header-form i {
+    background-color: #fff;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:auto;
+    padding:4px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    color: #666;
+}
+.main-header-top-bar-texto {
+    text-align: center;
+}
+
+.main-navbar{
+    display: flex;
+}
+
+.hamburguer-button {
+    text-align:center;
+}
+.hamburguer-button i {
+    background-color:#03264C;
+    color: white;
+    display:block;
+    max-width:50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align:center;
+    font-size: 18px;
+    margin:auto;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.right-navbar i {
+    margin: 0 5px;
+}
+
+.formulario-registro {
+    padding: 20px 15px;
+}
+
+/* //////////// ESTILOS DEL MAIN //////////// */
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+main h2 {
+    color: #666;
+    width:100%;
+}
+.index-banner {
+    margin:auto;
+    max-width: 1200px;
+}
+.index-banner img {
+    width:100%;
+
+}
+.articulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulo-home {
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.articulo-home img {
+    width:100%;
+    max-width: 300px;
+}
+
+.articulo-detalle {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #44ab64;
+}
+main section article i:hover {
+    animation: camion 0.8s;
+}
+
+@keyframes camion {
+    0% {rotate: -15deg;}
+    25% {rotate: -30deg;}
+    50% {rotate: -45deg;}
+    75% {rotate: -60deg;}
+    100% {rotate: -90deg;}
+}
+.articulo-detalle-pd {
+    align-items: center;
+}
+
+.articulo-detalle-precio {
+    font-size: 18px;
+    width: 50%;
+}
+
+.articulo-detalle-descuento {
+    font-size:16px;
+    color: #39b54a;
+}
+
+.articulo-detalle-descripcion {
+    font-size:16px;
+    color: #666;
+    display: none;
+
+}
+
+.articulo-detalle:hover  .articulo-detalle-descripcion {
+    display: block;
+}
+
+.form-enviar:hover {
+    background-color: #0022AA;
+}
+
+/* //////////// ESTILOS DEL FOOTER //////////// */
+footer {
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-box {
+    color: #666;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+.footer-box i {
+    font-size:2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+.footer-box h3 {
+    margin:0;
+    width: 100%;
+}
+.footer-box-article {
+    padding: 0 15px 50px 15px;
+}
+.footer-box p {
+    margin:0;
+}
+.footer-box-copyright p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* -------------------------------------------------- */
+/* ------------------ MEDIA QUERIES ----------------- */
+
+@media (min-width: 361px) {
+    .main-header-top-bar {
+
+    }
+    .main-header-top-bar-logo {
+        max-width: 200px;
+    }
+    .right-navbar {
+        text-align: right;
+    }
+    .main-header-form input {
+        width: 180px; 
+    }
+    .articulo-detalle-pd {
+        display:flex;
+    }
+    .articulo-detalle-descuento {
+        width: 50%;
+    }
+    .articulo-detalle-descripcion {
+        display: none;
+    }
+    .articulo-home:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .main-navbar {
+        display:flex;
+        justify-content: space-between;
+    }
+    .hamburguer-button {
+        display:none;
+    }
+    .articulo {
+      max-width:728px;
+    }
+    .articulo-home {
+        flex-grow: 1;
+        width:100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-header-top-bar-FINAL {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-header-top-bar {
+        align-items: center;
+        justify-content: left;
+    }
+    .main-header-top-bar-logo {
+        max-width:400px;
+    }
+    .main-header-top-bar-logo img {
+        width:100%;
+    }
+    .main-header-form {
+        max-width: 240px;
+    }
+    .main-header-form input {
+        width: 180px; 
+    }
+    .main-header-top-bar-texto {
+
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        margin-top: 30px;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    .articulo {
+        max-width:1160px;
+    }
+    .articulo-home {
+     flex-grow: 0.5;
+     max-width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+    .main-navbar {
+        max-width: 1200px;
+        margin:auto;
+        align-items: center;
+    }
+    .main-header-top-bar-FINAL {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .main-header-top-bar {
+        align-items: center;
+        justify-content: left;
+    }
+    .main-header-top-bar-logo {
+        width:400px;
+    }
+    .main-header-form {
+        max-width: 400px;
+    }
+    .main-header-top-bar-texto {
+        width: 100%;
+        text-align: right;
+    }
+    .main-header-form input {
+        width: 280px; 
+    }
+    .main-navbar {
+        margin-top: 30px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .footer i:hover{
+        color: #222222;
+    }
+    .index-banner img {
+        max-width:1200px;
+    }
+    .articulo {
+        max-width:1200px;
+        margin:auto;
+        align-items: center;
+    }
+    .articulo-home {
+        flex-grow: 0.25;
+        width:20%;
+        margin:0 5px;
+       }
+    .articulo-home img {
+        max-width: 200px;
+    }
+    .footer-box {
+        display: flex;
+    }
+}
+
+/* -------------------------------------------------- */
+/* --------------------- REGISTRO ------------------- */
+
+.form-box {
+    margin:auto;
+    max-width: 400px;
+}
+.register-box {
+    margin-bottom: 20px;
+}
+
+.register-box label {
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.register-box-field {
+    padding: 8px 8px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.register-button {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.login-button {
+    background-color: #03264C;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+}
+.login-button:hover {
+    background-color: #0022AA;
+}
+.register-box p {
+    font-size: 16px;
+    
+}
+.register-box-check {
+    margin-right: 15px;
+}
