@@ -252,6 +252,7 @@ footer {
 }
 .footer-box p {
     margin:0;
+    line-height: 16px;
 }
 .footer-box-copyright p {
     text-align: left;
